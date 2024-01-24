@@ -8,11 +8,17 @@ import Cart from "../models/cartModel.js";
 
 const signToken = (id) =>
   jwt.sign({ id }, process.env.JWT_SECRET, {
-    expiresIn: process.env.JWT_EXP,
-  });
+  expiresIn: process.env.JWT_EXP,
+});
 
 const removeCookies = (res, ...cookies) => {
-  cookies.forEach((name) => res.clearCookie(name));
+  cookies.forEach((name) =>
+    res.clearCookie(name, {
+      httpOnly: true,
+      sameSite: "none",
+      secure: true,
+    })
+  );
 };
 
 const createSendToken = (res, status, user) => {
@@ -22,9 +28,9 @@ const createSendToken = (res, status, user) => {
     expires: new Date(
       Date.now() + process.env.COOKIE_EXP * 24 * 60 * 60 * 1000
     ),
-    secure: true, // Will still work over http if it is a localhost
     httpOnly: true,
-    sameSite: "None"
+    sameSite: "none",
+    secure: true,
   };
 
   res.cookie("jwtToken", jwtToken, cookieOptions);

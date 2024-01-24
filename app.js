@@ -16,7 +16,6 @@ import {
 const app = express();
 const { PORT, DB_URI } = process.env;
 
-
 app
   .use(cors({ origin: ["http://localhost:5000", "https://vinyl-8fcx.onrender.com"], credentials: true }))
   .use(express.json())
