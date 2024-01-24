@@ -155,7 +155,7 @@ export default [
     title: "What's Going On",
     year: 1971,
     artist: "Marvin Gaye",
-    img: "https://en.wikipedia.org/wiki/What%27s_Going_On_(Marvin_Gaye_album)#/media/File:MarvinGayeWhat'sGoingOnalbumcover.jpg",
+    img: "https://en.wikipedia.org/wiki/What%27s_Going_On_(Marvin_Gaye_album)#/medi/:MarvinGayeWhat'sGoingOnalbumcover.jpg",
     price: 19,
     genre: "soul",
   },
