@@ -20,11 +20,11 @@ const upload = multer({
   fileFilter: multerFilter,
 });
 
-export const processUserAvatar = (req, res, next) => {
+export const processUserAvatar = async(req, res, next) => {
   if (req.file) {
     req.file.fileName = `user_${req.user.id}-${Date.now()}.jpeg`;
 
-    sharp(req.file.buffer)
+   await sharp(req.file.buffer)
       .resize(500, 500)
       .toFormat("jpeg")
       .jpeg({ quality: 80 })
