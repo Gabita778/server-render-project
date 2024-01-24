@@ -14,7 +14,7 @@ import {
 } from "./middlewares/errorHandlers.js";
 
 const app = express();
-const { PORT = 5000, DB_URI } = process.env;
+const { PORT, DB_URI } = process.env;
 
 app
   .use(cors({ origin: ["http://localhost:5000", "https://vinyl-8fcx.onrender.com"], credentials: true }))
