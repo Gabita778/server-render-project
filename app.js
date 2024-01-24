@@ -16,10 +16,6 @@ import {
 const app = express();
 const { PORT, DB_URI } = process.env;
 
-if (!PORT || !DB_URI) {
-  console.error("Please provide values for PORT and DB_URI in the environment.");
-  process.exit(1);
-}
 
 app
   .use(cors({ origin: ["http://localhost:5000", "https://vinyl-8fcx.onrender.com"], credentials: true }))
