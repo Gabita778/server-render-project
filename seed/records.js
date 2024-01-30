@@ -192,4 +192,13 @@ export default [
     price: 18,
     genre: "Hard rock, country blues,  blues",
   },
+  {
+    title: "new dress",
+    year:  1969,
+    artist: "The Rolling Stones",
+    img: "https://cdn.rebelle.com//10/1096895120231128-1-1ej68cd.jpeg?width=500&height=500",
+    
+    price: 18,
+    genre: "Hard rock, country blues,  blues",
+  },
 ];
