@@ -9,10 +9,10 @@ import "dotenv/config";
     const records = data.map((item) => new Record(item));
 
     await Record.deleteMany();
-    console.log("Data Deleted successfuly");
+    console.log("Data Deleted successfully");
 
     await Record.insertMany(records);
-    console.log("Data seeded successfuly");
+    console.log("Data seeded successfully");
   } catch (error) {
     console.log(`Error while seeding data: ${error}`);
   } finally {
