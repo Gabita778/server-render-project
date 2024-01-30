@@ -122,7 +122,7 @@ export const getMe = (req, res, next) => {
     // user.password = undefined;
 
     res.status(200).json({
-      sucess: true,
+      success: true,
       user,
       isAuthenticated,
       // jwtToken: cookies["jwtToken"],
@@ -138,7 +138,7 @@ export const restrictTo = (...roles) => {
       if (!roles.includes(req.user.role)) {
         throw createError(
           403,
-          "Access denied: You don't have the required permitions."
+          "Access denied: You don't have the required permissions."
         );
       }
       next();
