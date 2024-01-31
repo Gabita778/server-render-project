@@ -225,4 +225,13 @@ export default [
     price: 18,
     genre: "Hard rock, country blues,  blues",
   },
+  {
+    title: "new dress4",
+    year:  1969,
+    artist: "The Rolling Stones",
+    img: "https://www.leathercompany.co.uk/images/ladies-leather-biker-jacket-beige-g-celia22-p7531-27307_thumb.jpg",
+    
+    price: 18,
+    genre: "Hard rock, country blues,  blues",
+  },
 ];
