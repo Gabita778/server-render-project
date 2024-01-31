@@ -826,7 +826,7 @@ export default [
     title: "new dress70",
     year:  1969,
     artist: "The Rolling Stones",
-    img: "https://drive.google.com/drive/folders/1vvbkrQ9oXZ33JJnh66U-FMp2Q0chngKs",
+    img: "",
     
     price: 18,
     genre: "Hard rock, country blues,  blues",
