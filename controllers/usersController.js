@@ -1,9 +1,8 @@
 import multer from "multer";
 import sharp from "sharp";
 import createError from "http-errors";
-
 import User from "../models/userModel.js";
-import successHandler from "../middlewares/successHandler.js";
+import successHandler from "../middlewares/successHandler.js"; 
 import { isValidId } from "../middlewares/errorHandlers.js";
 
 //* --------------------- Multer & sharp configurations -----------------------

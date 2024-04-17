@@ -147,3 +147,22 @@ export const restrictTo = (...roles) => {
     next();
   }
 };
+
+// const createCart = async (user) => {
+//   try {
+//     const existingCart = await Cart.findOne({ user: user._id });
+
+//     if (existingCart) {
+//       await existingCart;
+//     }
+
+//     const newCart = await Cart.create({ user: user._id });
+//     user.cartId = newCart._id;
+//     await user.save();
+
+//     await newCart;
+    
+//   } catch (error) {
+//     throw error; 
+//   }
+// };
