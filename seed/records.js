@@ -187,7 +187,7 @@ export default [
     title: "Let it bleed",
     year:  1969,
     artist: "The Rolling Stones",
-    img: "https://statics-cdn-v2.fashionette.net/transform/7fceb356-807a-47a4-aa20-6f7c962720ea/97e0eb9f5b744ed8d1ec4948849a12e3f8525d1c",
+    img: "https://upload.wikimedia.org/wikipedia/en/c/c0/LetitbleedRS.jpg",
     price: 18,
     genre: "Hard rock, country blues,  blues",
   }
